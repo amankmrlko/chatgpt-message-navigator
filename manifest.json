@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT My Messages Navigator",
+  "version": "1.0.0",
+  "description": "Lists your messages in the current ChatGPT conversation and lets you jump to them.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://chat.openai.com/*", "https://chatgpt.com/*"],
+  "action": {
+    "default_title": "My ChatGPT Messages",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*", "https://chatgpt.com/*"],
+      "js": ["content-script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
