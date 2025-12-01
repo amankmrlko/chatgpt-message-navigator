@@ -58,16 +58,6 @@ That’s it. The extension will appear in your Chrome toolbar.
 
 Nothing else. No analytics. No storage. No tracking.
 
----
-
-## 📦 Folder Structure
-
-├── manifest.json
-├── content-script.js
-├── popup.html
-├── popup.js
-
-
 
 ---
 
